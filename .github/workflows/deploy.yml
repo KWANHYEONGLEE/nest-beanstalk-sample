@@ -46,8 +46,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: nest-beanstalk
-          environment_name: Nestsample-env
+          application_name: nest-sample
+          environment_name: nest-beanstalk
           region: ap-northeast-2
           version_label: 'nest-${{ steps.format-time.outputs.replaced }}'
           deployment_package: deploy.zip
